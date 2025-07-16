@@ -1,0 +1,69 @@
+.ask-question {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ask-question h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0d6efd;
+}
+
+/* Label styling */
+.ask-question label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input & Textarea */
+.ask-question input,
+.ask-question textarea {
+  width: 100%;
+  padding: 0.85rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.ask-question input:focus,
+.ask-question textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+/* Submit Button */
+.ask-question button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ask-question button:hover {
+  background-color: #1d4ed8;
+}
+
+.ask-question button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ask-question {
+    padding: 1.5rem 1rem;
+  }
+}

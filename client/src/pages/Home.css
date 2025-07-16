@@ -1,0 +1,172 @@
+.home-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.home-content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading and paragraph */
+.home-content h1 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Ask Question button */
+.home-content button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0d6efd;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.home-content button:hover {
+  background-color: #0b5ed7;
+}
+
+/* Question list */
+.question-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 16px; 
+  text-align: left;
+}
+
+/* Each question card */
+.question-card {
+  background: #fdfdfd;
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.question-card:hover {
+  background-color: #f1f1f1;
+}
+
+.question-card h3 {
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.question-card p {
+  margin: 0 0 6px;
+  color: #555;
+}
+
+.question-card small {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #0d6efd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled):not(.active) {
+  background-color: #e6f0ff; 
+}
+
+.pagination button.active {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 30px 20px;
+  }
+
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .question-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*  Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark .home-content {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .question-card {
+  background: #2c2c2c;
+  color: #fff;
+  border-color: #444;
+}
+
+body.dark .pagination button {
+  background-color: #2c2c2c;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark .pagination button.active {
+  background-color: #0d6efd;
+  color: white;
+}
