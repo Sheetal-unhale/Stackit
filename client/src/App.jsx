@@ -10,7 +10,7 @@ import './Navbar.css';
 function App() {
   return (
     <Router>
-      <Navbar /> {/* <-- Add here so it's always visible */}
+      <Navbar /> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ask" element={<AskQuestion />} />
